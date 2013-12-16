@@ -1,0 +1,7 @@
+﻿
+
+V0.0.1 
+
+1、解决 "The server committed a protocol violation. Section=ResponseHeader Detail=CR must be followed by LF"
+2、解决 解释json 时崩溃
+3、解决 bter 有些币的错误信息显示不出来
