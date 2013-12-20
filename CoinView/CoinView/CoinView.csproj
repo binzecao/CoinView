@@ -47,28 +47,104 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bter_Form.cs">
+    <Compile Include="CoinControl\Bter\Bter_Depth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoinControl\Bter\Bter_Depth.Designer.cs">
+      <DependentUpon>Bter_Depth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinControl\Bter\Bter_Full.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoinControl\Bter\Bter_Full.Designer.cs">
+      <DependentUpon>Bter_Full.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinControl\Bter\Bter_Ticker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoinControl\Bter\Bter_Ticker.Designer.cs">
+      <DependentUpon>Bter_Ticker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinControl\Bter\Bter_Trades.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoinControl\Bter\Bter_Trades.Designer.cs">
+      <DependentUpon>Bter_Trades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinControl\Coins.cs" />
+    <Compile Include="CoinControl\ICoinControl.cs" />
+    <Compile Include="CoinControl\OKCoin\OKCoin_Full.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoinControl\OKCoin\OKCoin_Full.Designer.cs">
+      <DependentUpon>OKCoin_Full.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinControl\OKCoin\OKCoin_Ticker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoinControl\OKCoin\OKCoin_Ticker.Designer.cs">
+      <DependentUpon>OKCoin_Ticker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bter_Form.Designer.cs">
-      <DependentUpon>Bter_Form.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="OKCoin_Form.cs">
+    <Compile Include="PhraseCalculate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OKCoin_Form.Designer.cs">
-      <DependentUpon>OKCoin_Form.cs</DependentUpon>
+    <Compile Include="PhraseCalculate.Designer.cs">
+      <DependentUpon>PhraseCalculate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model\Ticker.cs" />
+    <Compile Include="PositionCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositionCalculate.Designer.cs">
+      <DependentUpon>PositionCalculate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CoinControl\OKCoin\OKCoin_Depth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoinControl\OKCoin\OKCoin_Depth.Designer.cs">
+      <DependentUpon>OKCoin_Depth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CoinControl\OKCoin\OKCoin_Trades.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CoinControl\OKCoin\OKCoin_Trades.Designer.cs">
+      <DependentUpon>OKCoin_Trades.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utility\User32.cs" />
     <Compile Include="Utility\Utility.cs" />
-    <EmbeddedResource Include="Bter_Form.resx">
-      <DependentUpon>Bter_Form.cs</DependentUpon>
+    <EmbeddedResource Include="CoinControl\Bter\Bter_Depth.resx">
+      <DependentUpon>Bter_Depth.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OKCoin_Form.resx">
-      <DependentUpon>OKCoin_Form.cs</DependentUpon>
+    <EmbeddedResource Include="CoinControl\Bter\Bter_Full.resx">
+      <DependentUpon>Bter_Full.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinControl\Bter\Bter_Ticker.resx">
+      <DependentUpon>Bter_Ticker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinControl\Bter\Bter_Trades.resx">
+      <DependentUpon>Bter_Trades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinControl\OKCoin\OKCoin_Full.resx">
+      <DependentUpon>OKCoin_Full.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinControl\OKCoin\OKCoin_Ticker.resx">
+      <DependentUpon>OKCoin_Ticker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhraseCalculate.resx">
+      <DependentUpon>PhraseCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositionCalculate.resx">
+      <DependentUpon>PositionCalculate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -79,9 +155,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <EmbeddedResource Include="CoinControl\OKCoin\OKCoin_Depth.resx">
+      <DependentUpon>OKCoin_Depth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoinControl\OKCoin\OKCoin_Trades.resx">
+      <DependentUpon>OKCoin_Trades.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,13 +173,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\niLogo.ico" />
     <Content Include="Images\OKCoin.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CoinControl\Common\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

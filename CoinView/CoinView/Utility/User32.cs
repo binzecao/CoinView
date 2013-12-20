@@ -39,5 +39,19 @@ namespace CoinView
 
         [DllImport("user32.dll", EntryPoint = "SetWindowPos")]
         public static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X,int Y,int cx,int cy,uint uflags);
+
+        public const int WM_SYSCOMMAND = 0x0112;
+        public const int SC_MOVE = 0xF010;
+        public const int HTCAPTION = 0x0002;
+        [DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+        [DllImport("user32.dll")]
+        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int IParam);
+
+
+        public const int SM_CYCAPTION = 0x0004;
+        [DllImport("user32.dll")]
+        public static extern int GetSystemMetrics(int nIndex); 
+        
     }
 }

@@ -1,7 +1,9 @@
-﻿
+﻿V0.0.2
+1、添加委单信息和最新成交详情
+2、添加显示和隐藏功能
+3、用主界面加载、显示用户控件方式，代替切换平台时切换窗体的方式。
 
 V0.0.1 
-
 1、解决 "The server committed a protocol violation. Section=ResponseHeader Detail=CR must be followed by LF"
 2、解决 解释json 时崩溃
 3、解决 bter 有些币的错误信息显示不出来

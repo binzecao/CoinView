@@ -16,7 +16,9 @@ namespace CoinView
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(OKCoin_Form.getInstance());
+            Application.Run(new MainForm());
+            //Application.Run(new PhraseCalculate());
+            //Application.Run(new PositionCalculate());
         }
     }
 }
